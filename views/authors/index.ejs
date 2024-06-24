@@ -1,0 +1,8 @@
+<form action="/authors">
+  <%- include('_form_fields') %>
+  <button type="submit">Search</button>
+</form>
+<h3>Authors list</h3>
+<% if(authors != null)authors.forEach( author => { %>
+<li><%= author.name %></li>
+<% }) %>

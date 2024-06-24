@@ -1,0 +1,7 @@
+<h3>enter auuthor name to add:</h3>
+<% if(typeof errorMessage !== 'undefined' && errorMessage!=null) { %> <%=
+errorMessage %> <% } %>
+<form action="/authors" method="post">
+  <input type="text" name="name" value="<%= author.name %>" />
+  <button type="submit">Submit</button>
+</form>
